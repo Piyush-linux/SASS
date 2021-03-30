@@ -18,7 +18,8 @@ body {
   flex-direction: row;
   justify-content: space-between; }
   .nav-fav {
-    align-items: center; }
+    align-items: center;
+    margin-left: .5em; }
     .nav-fav .iconify {
       width: 2em;
       height: 2em; }
@@ -28,8 +29,8 @@ body {
       .nav-bar .iconify {
         opacity: 1;
         color: black;
-        width: 24px;
-        height: 24px;
+        width: 2em;
+        height: 2em;
         margin-top: 1em; } }
   .nav-link {
     float: right;
@@ -90,7 +91,11 @@ body {
     .one-third {
       flex-direction: row;
       align-items: center;
-      margin: 1em 0; } }
+      margin: 1em .5em; }
+      .one-third img {
+        width: 40vw; }
+      .one-third p {
+        padding: .3rem; } }
 
 footer {
   background-color: #34495e;

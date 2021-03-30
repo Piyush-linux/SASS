@@ -54,7 +54,7 @@ body {
     &-fav {
         @extend %center;
         align-items: center;
-
+        margin-left: .5em;
         .iconify {
             width: 2em;
             height: 2em;
@@ -68,8 +68,8 @@ body {
             @include tablet {
                 opacity: 1;
                 color: black;
-                width: 24px;
-                height: 24px;
+                width: 2em;
+                height: 2em;
                 margin-top: 1em;
             }
         }
@@ -181,7 +181,13 @@ body {
     @include tab() {
         flex-direction:row;
         align-items:center;
-        margin:1em 0;
+        margin:1em .5em;
+        img{
+        width: 40vw;       
+        }
+        p{
+            padding:.3rem;
+        }
     }
 }
 // footer
