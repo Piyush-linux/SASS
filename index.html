@@ -1,86 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<!-- Skeleton CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" />
-	<!-- iconify -->
-	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-	<!-- style -->
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Skeleton CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" />
+    <!-- iconify -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
-<div class="container">
-	<!-- navbar -->
-	<div class="row">
-		
-	<nav class="nav">
-		<div class="nav-fav">
-			<span class="iconify" data-icon="feather:feather" data-inline="false"></span>
-		</div>
-		<div class="nav-bar" onclick="bar_open()">
-			<span class="iconify" data-icon="pixelarticons:align-right" data-inline="false"></span>
-		</div>
-		<div class="nav-link">
-			<a href="">HOME</a>
-			<a href="">ABOUT</a>
-			<a href="">BLOG</a>
-		</div>
-		<div class="nav-close" onclick="bar_close()">
-			<span class="iconify" data-icon="radix-icons:cross-2" data-inline="false"></span>
-		</div>
-	</nav>
-	</div>
-	<!-- hero -->
-	<div class="row">
-		<div class="hero" align="center">
-			<div class="hero-left"><h1>Bulid it Beautifull <br>& Unparallel </h1></div>
-			<div class="hero-right"><img src="party.svg" alt="" width="100%"></div>
-		</div>
-	</div>
-	<hr>
-	<!-- gallerry -->
-	 		<h1 align="center">Gallery</h1>
-	 <div class="row" align="center">
+    <div class="container">
+        <!-- navbar -->
+        <div class="row">
+            <nav class="nav">
+                <!-- brand -->
+                <div class="nav-fav">
+                    <span class="iconify" data-icon="feather:feather" data-inline="false"></span>
+                </div>
+                <!-- bar-open -->
+                <div class="nav-bar" onclick="bar_open()">
+                    <span class="iconify" data-icon="pixelarticons:align-right" data-inline="false"></span>
+                </div>
+                <!-- menu -->
+                <div class="nav-link">
+                    <a href="">HOME</a>
+                    <a href="">ABOUT</a>
+                    <a href="">BLOG</a>
+                </div>
+                <!-- bar-close -->
+                <div class="nav-close" onclick="bar_close()">
+                    <span class="iconify" data-icon="radix-icons:cross-2" data-inline="false"></span>
+                </div>
+            </nav>
+        </div>
+        <!-- hero -->
+        <div class="row">
+            <div class="hero" align="center">
+                <!-- L -->
+                <div class="hero-left">
+                    <h1>Bulid it Beautifull <br>& Unparallel </h1>
+                </div>
+                <!-- R -->
+                <div class="hero-right"><img src="./img/party.svg" alt="" width="100%"></div>
+            </div>
+        </div>
+        <hr>
+        <!-- gallerry -->
+        <h1 align="center">Gallery</h1>
+        <div class="row" align="center">
+        	<!-- c1 -->
             <div class="one-third column">
                 <img src="./img/austro.png" alt="">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis.</p>
             </div>
+            <!-- c2 -->
             <div class="one-third column">
                 <img src="./img/austro.png" alt="">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis.</p>
             </div>
+            <!-- c3 -->
             <div class="one-third column">
                 <img src="./img/austro.png" alt="">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis.</p>
             </div>
         </div>
-</div>
-<!-- footer -->
-	<footer>
-		<h1>Feather</h1>
-		<ul>
-			<!-- twitter -->
-			<li><a href="">
-				<span class="iconify" data-icon="akar-icons:twitter-fill" data-inline="false"></span>
-			</a></li>
-			<!-- github -->
-			<li><a href="">
-				<span class="iconify" data-icon="uil:github-alt" data-inline="false"></span>
-			</a></li>
-		</ul>
-	</footer>
-<!-- script -->
-<script type="text/javascript">
-	 // jshint esversion:8 
-	 function bar_open () {
-	 	document.querySelector('.nav').classList.add('active');
-	 }
-	 function bar_close () {
-	 	document.querySelector('.nav').classList.remove('active');
-	 }
-</script>
+    </div>
+    <!-- footer -->
+    <footer>
+        <h1>Feather</h1>
+        <ul>
+            <!-- twitter -->
+            <li><a href="">
+                    <span class="iconify" data-icon="akar-icons:twitter-fill" data-inline="false"></span>
+                </a></li>
+            <!-- github -->
+            <li><a href="">
+                    <span class="iconify" data-icon="uil:github-alt" data-inline="false"></span>
+                </a></li>
+        </ul>
+    </footer>
+    <!-- script -->
+    <script type="text/javascript">
+    // jshint esversion:8 
+    function bar_open() {
+        document.querySelector('.nav').classList.add('active');
+    }
+
+    function bar_close() {
+        document.querySelector('.nav').classList.remove('active');
+    }
+    </script>
 </body>
+
 </html>
