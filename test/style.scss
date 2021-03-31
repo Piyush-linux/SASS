@@ -2,6 +2,13 @@
 $grey:#bdc3c7;
 $ff:Montserrat;
 $black:#34495e;
+
+@mixin tab(){
+	@media screen and (max-width: 760px) {
+		@content
+	}
+}
+
 body{
 	margin: 0;
 	padding: 0;
@@ -38,17 +45,21 @@ body{
 		}
 	}
 	&-right{
+		height:100vh;
+		width: 100%;
 		@extend %center;
 		align-items:center;
 		flex-direction: column;
-		height:100vh;
-		width: 100%;
 		p{
+			position:static;
 			text-align: center;
 			color:$grey;
 			padding:0 1rem;
 			font-size: 1.3em;
 			margin-bottom: 2em;
+			@include tab(){
+				font-size: 1em;
+			}
 		}
 		button{
 			color:$black;

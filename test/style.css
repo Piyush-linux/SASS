@@ -26,16 +26,20 @@ body {
     margin-top: 0;
     padding: 2em 0; }
 .hero-right {
-  align-items: center;
-  flex-direction: column;
   height: 100vh;
-  width: 100%; }
+  width: 100%;
+  align-items: center;
+  flex-direction: column; }
   .hero-right p {
+    position: static;
     text-align: center;
     color: #bdc3c7;
     padding: 0 1rem;
     font-size: 1.3em;
     margin-bottom: 2em; }
+    @media screen and (max-width: 760px) {
+      .hero-right p {
+        font-size: 1em; } }
   .hero-right button {
     color: #34495e;
     font-size: 1.5rem;
