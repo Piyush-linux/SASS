@@ -76,9 +76,12 @@ body {
             color: black;
             text-decoration: none;
             padding: 1rem;
-
+            font-family: Hermit;
+            font-weight: bolder;
+            transition-duration: .5s;
             &:hover {
-                color: lime;
+                padding:1em;
+                transition-duration: .5s;
             }
         }
 

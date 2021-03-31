@@ -40,9 +40,13 @@ body {
     .nav-link a {
       color: black;
       text-decoration: none;
-      padding: 1rem; }
+      padding: 1rem;
+      font-family: Hermit;
+      font-weight: bolder;
+      transition-duration: .5s; }
       .nav-link a:hover {
-        color: lime; }
+        padding: 1em;
+        transition-duration: .5s; }
     @media screen and (max-width: 768px) {
       .nav-link {
         display: none; } }

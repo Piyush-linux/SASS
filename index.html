@@ -12,6 +12,21 @@
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <!-- style -->
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <style type="text/css" media="screen">
+        .iconify{
+    animation-name: ckw;
+    /*animation: chk 7s infinite;;*/
+    animation-duration: 10s ;
+}
+@keyframes ckw {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+    </style>
 </head>
 
 <body>
@@ -21,7 +36,9 @@
             <nav class="nav">
                 <!-- brand -->
                 <div class="nav-fav">
-                    <span class="iconify" data-icon="feather:feather" data-inline="false"></span>
+                    <!-- <span class="iconify" data-icon="feather:feather" 
+                        data-inline="false"></span> -->
+                        <span class="iconify" data-icon="mdi:atom-variant" data-inline="false"></span>
                 </div>
                 <!-- bar-open -->
                 <div class="nav-bar" onclick="bar_open()">
